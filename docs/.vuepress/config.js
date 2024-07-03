@@ -12,7 +12,11 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: "/assets/qux-logo.png",
 
-    navbar: ["/", "/current/getting-started.md"],
+    navbar: [
+      "/",
+      { text: "Current", prefix: "/current/", children: ["getting-started"] },
+      { text: "v2", prefix: "/v2/", children: [] },
+    ],
   }),
 
   bundler: viteBundler(),
