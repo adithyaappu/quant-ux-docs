@@ -7,7 +7,7 @@ export default defineUserConfig({
   lang: "en-US",
 
   title: "Quant-UX Docs",
-  description: "Documentation of quantitative UX analyis platform Quant-UX",
+  description: "Documentation of quantitative UX analysis platform Quant-UX",
 
   theme: defaultTheme({
     logo: "/assets/qux-logo.png",
@@ -15,7 +15,7 @@ export default defineUserConfig({
     navbar: [
       "/",
       { text: "Current", prefix: "/current/", children: ["getting-started"] },
-      { text: "v2", prefix: "/v2/", children: [] },
+      { text: "v2", prefix: "/v2/", children: ["getting-started"] },
     ],
   }),
 
