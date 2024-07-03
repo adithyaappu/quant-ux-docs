@@ -1,18 +1,20 @@
-import { defaultTheme } from '@vuepress/theme-default'
-import { defineUserConfig } from 'vuepress/cli'
-import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from "@vuepress/theme-default";
+import { defineUserConfig } from "vuepress/cli";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { svgIconPlugin } from "@goy/vuepress-plugin-svg-icons";
 
 export default defineUserConfig({
-  lang: 'en-US',
+  lang: "en-US",
 
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: "Quant-UX Docs",
+  description: "Documentation of quantitative UX analyis platform Quant-UX",
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: "/assets/qux-logo.png",
 
-    navbar: ['/', '/get-started'],
+    navbar: ["/", "/current/getting-started.md"],
   }),
 
   bundler: viteBundler(),
-})
+  plugins: [svgIconPlugin()],
+});

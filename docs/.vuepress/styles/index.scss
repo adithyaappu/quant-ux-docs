@@ -6,8 +6,8 @@
 
 :root {
   // brand colors
-  --c-brand: #3eaf7c;
-  --c-brand-light: #4abf8a;
+  --c-brand: #2652de;
+  --c-brand-light: #2652de;
 
   // background colors
   --c-bg: #fff;
@@ -217,8 +217,8 @@ body {
 
 html.dark {
   // brand colors
-  --c-brand: #3aa675;
-  --c-brand-light: #349469;
+  --c-brand: hsl(226, 96%, 70%);
+  --c-brand-light: #2652de;
 
   // background colors
   --c-bg: #22272e;
