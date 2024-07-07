@@ -4,26 +4,26 @@ title: Home
 heroImage: /assets/qux-logo.png
 actions:
   - text: Get Started
-    link: /getting-started.html
+    link: /content/getting-started/
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
+  - text: Go to App
+    link: https://quant-ux.com
     type: secondary
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: It's FOSS
+    details: Completely free and open source software without any feature lock-ins.
+  - title: Prototype, Test, and Analyse
+    details: Quant-UX contain all the tools required for UX design and research.
+  - title: Functional Designs
+    details: Unlike conventional prototyping tools Quant-UX has widgets to create functional prototypes.
+  - title: AI Design Assistant
+    details: Quickly spin up prototypes with simple prompts and add customise as you want
+  - title: Informed Design Decisions
+    details: With in-depth analytics of tests take better design decisions
+  - title: Collaborate
+    details: In every step collaborate with your team and speed up the entire process.
 
 footer: GPL-3.0 | Copyright © 2024 Quant-UX Community
 ---

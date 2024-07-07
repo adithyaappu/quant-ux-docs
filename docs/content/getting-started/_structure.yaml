@@ -1,0 +1,24 @@
+getting-started:
+  - features-overview:
+      - prototype
+      - user-testing
+      - analytics
+  - onboarding:
+      - signup
+      - singin
+  - landing-page:
+      - main-sections
+  - your-first-prototype:
+      - create-new-prototype
+      - basic-tools
+      - ai-design-assistant
+      - widgets
+  - simulation:
+      - start-simulation
+  - testing:
+      - create-tests
+      - share-test-link
+  - results:
+      - task-results
+      - analytics
+      - heat-maps

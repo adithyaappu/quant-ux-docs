@@ -7,16 +7,36 @@ export default defineUserConfig({
   lang: "en-US",
 
   title: "Quant-UX Docs",
-  description: "Documentation of quantitative UX analysis platform Quant-UX",
+  description: "Quantitative UX Design and Analytics Tool",
 
   theme: defaultTheme({
     logo: "/assets/qux-logo.png",
 
     navbar: [
       "/",
-      { text: "Current", prefix: "/current/", children: ["getting-started"] },
-      { text: "v2", prefix: "/v2/", children: ["getting-started"] },
+      // { text: "Current", prefix: "/current/", children: ["getting-started"] },
+      {
+        text: "Docs",
+        prefix: "/content/",
+        children: ["getting-started/", "prototype/"],
+      },
     ],
+    sidebar: {
+      "/content/": [
+        {
+          text: "Getting Started",
+          prefix: "getting-started/",
+          link: "getting-started/",
+          children: ["features-overview"],
+        },
+        {
+          text: "Prototype",
+          prefix: "prototype/",
+          link: "prototype/",
+          children: ["add-screen"],
+        },
+      ],
+    },
   }),
 
   bundler: viteBundler(),
