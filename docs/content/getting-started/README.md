@@ -10,4 +10,4 @@ After specifying the required 'Tests', the prototypes can be shared with others 
 
 [todo]: mod-image
 
-![user landing page of Quant-UX](media/pictures/user-landing-page.png)
+![alt text](media/pictures/qux-overview-design-screen.png)

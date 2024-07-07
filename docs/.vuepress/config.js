@@ -14,7 +14,6 @@ export default defineUserConfig({
 
     navbar: [
       "/",
-      // { text: "Current", prefix: "/current/", children: ["getting-started"] },
       {
         text: "Docs",
         prefix: "/content/",
@@ -27,7 +26,7 @@ export default defineUserConfig({
           text: "Getting Started",
           prefix: "getting-started/",
           link: "getting-started/",
-          children: ["features-overview"],
+          children: ["features-overview", "your-first-prototype"],
         },
         {
           text: "Prototype",
