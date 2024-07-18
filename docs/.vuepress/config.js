@@ -2,6 +2,9 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress/cli";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { svgIconPlugin } from "@goy/vuepress-plugin-svg-icons";
+import { componentsPlugin } from "vuepress-plugin-components";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+// import { Component } from "vidstack/types/vidstack-ffSmmxHH.js";
 
 export default defineUserConfig({
   lang: "en-US",
@@ -26,7 +29,7 @@ export default defineUserConfig({
           text: "Getting Started",
           prefix: "getting-started/",
           link: "getting-started/",
-          children: ["features-overview", "your-first-prototype"],
+          children: ["your-first-prototype", "features-overview"],
         },
         {
           text: "Prototype",
@@ -39,5 +42,13 @@ export default defineUserConfig({
   }),
 
   bundler: viteBundler(),
-  plugins: [svgIconPlugin()],
+  plugins: [
+    svgIconPlugin(),
+    componentsPlugin({
+      components: ["VidStack"],
+    }),
+    mdEnhancePlugin({
+      hint: true,
+    }),
+  ],
 });

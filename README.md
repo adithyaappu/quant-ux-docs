@@ -6,6 +6,18 @@ Quant UX is a free and open source quantitative user experience design and analy
 
 This documentation is built with VuePress. Contributions are welcome, please note a few points highlighted below.
 
+## Fork and Clone
+
+Fork the repo to you account and then clone it to your local.
+
+## Run
+
+```
+npm run docs:dev
+```
+
+Open [http://localhost:8080/](http://localhost:8080/)
+
 ### Content and Structure
 
 The entire documentation is in the directory `docs/`, with 3 sub-folders and a README.md file. Sub-folders are,
@@ -53,9 +65,9 @@ Syntax is,
 For example,
 
 ```markdown
-[to-do]: update the image
+[todo]: update the image
 ```
 
 This will not show up in the markdown preview. use same `type-id` through out to classify comments, which is useful while searching for tasks. Currently used `type-id`s are,
 
-- to-do
+- todo
