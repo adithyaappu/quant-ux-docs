@@ -4,6 +4,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { svgIconPlugin } from "@goy/vuepress-plugin-svg-icons";
 import { componentsPlugin } from "vuepress-plugin-components";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import { searchPlugin } from "@vuepress/plugin-search";
 // import { Component } from "vidstack/types/vidstack-ffSmmxHH.js";
 
 export default defineUserConfig({
@@ -14,6 +15,7 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     logo: "/assets/qux-logo.png",
+    repo: "KlausSchaefers/quant-ux",
 
     navbar: [
       "/",
@@ -49,6 +51,13 @@ export default defineUserConfig({
     }),
     mdEnhancePlugin({
       hint: true,
+    }),
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "Search",
+        },
+      },
     }),
   ],
 });
