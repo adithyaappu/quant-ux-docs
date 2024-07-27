@@ -8,6 +8,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 // import { Component } from "vidstack/types/vidstack-ffSmmxHH.js";
 
 export default defineUserConfig({
+  base: "/quant-ux-docs/",
   lang: "en-US",
 
   title: "Quant-UX Docs",
