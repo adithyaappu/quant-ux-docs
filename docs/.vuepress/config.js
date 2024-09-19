@@ -32,7 +32,7 @@ export default defineUserConfig({
           text: "Getting Started",
           prefix: "getting-started/",
           link: "getting-started/",
-          children: ["your-first-prototype", "features-overview"],
+          children: ["design-your-first-prototype", "create-user-tests"],
         },
         {
           text: "Prototype",

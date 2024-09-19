@@ -10,4 +10,4 @@ After specifying the required 'Tests', the prototypes can be shared with others 
 
 [todo]: mod-image
 
-![alt text](media/pictures/qux-overview-design-screen.png)
+![alt text](media/design-your-first-prototype/qux-overview-design-screen.png)

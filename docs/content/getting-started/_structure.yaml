@@ -8,11 +8,12 @@ getting-started:
       - singin
   - landing-page:
       - main-sections
-  - your-first-prototype:
-      - create-new-prototype
-      - basic-tools
-      - ai-design-assistant
-      - widgets
+  - create-your-first-prototype:
+      - Quick Demo
+      - Detailed Steps:
+          - Design
+          - Prototype
+          - Simulate
   - simulation:
       - start-simulation
   - testing:
