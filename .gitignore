@@ -54,15 +54,15 @@ jspm_packages/
 .env.production.local
 .env.local
 
-# vuepress build output
-.vuepress/dist
+# vitepress build output
+**/.vitepress/dist
 
-# vuepress v2.x temp and cache directory
-.temp
-.cache
+# vitepress cache
+**/cache
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.vscode
 
 # yarn v2
 .yarn/cache
@@ -70,5 +70,3 @@ jspm_packages/
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-.vscode

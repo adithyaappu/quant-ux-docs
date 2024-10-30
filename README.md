@@ -4,51 +4,60 @@ Quant UX is a free and open source quantitative user experience design and analy
 
 ## Contributing
 
-This documentation is built with VuePress. Contributions are welcome, please note a few points highlighted below.
+This documentation is built with VitePress. Contributions are welcome, please note a few points highlighted below.
 
 ## Fork and Clone
 
 Fork the repo to you account and then clone it to your local.
 
+## Install
+
+Install dependencies by running
+
+```
+npm install
+```
+
 ## Run
+
+To run development run use
 
 ```
 npm run docs:dev
 ```
 
-Open [http://localhost:8080/](http://localhost:8080/)
+Open [http://localhost:5173/quant-ux-docs/](http://localhost:5173/quant-ux-docs/)
 
 ### Content and Structure
 
-The entire documentation is in the directory `docs/`, with 3 sub-folders and a README.md file. Sub-folders are,
+The project contain following base folders
 
-- **.vuepress/**: contains main configuration file, a `public/` folder which is served by default, and a `styles/` folder for making changes to default theme.
-- **content/**: entire text content in the `.md` format goes into this folder. It is further divided into subfolders based of major topics.
-- **icons/**: this folder is _only_ for a VuePress plug-in, [vuepress-plugin-svg-icons](https://github.com/ntnyq/vuepress-plugin-svg-icons). This is used for inline icons inside the markdown documents.
-- **README.md**: content of the homepage is written here in YAML, as the frontmatter of that file.
+- **`.github/`**: github action files to build the site and publish.
 
-### README in the Subfolder
+- **`.vitepress/`** directory which contain contains main configuration file, and a `theme/` folder for making changes to default theme.
 
-Content of the `README.md` file in every subfolder will be used as the content for the page corresponding to that subfolder. This page is aimed to give an introduction, an overview, or a catalogue. This page will be shown when the section is selected from the top navigation bar.
+- **`src/`**: All the text content in the `.md` format goes into this folder. It is further divided into subfolders based of major topics. The `src/docs` folder contain user documentation and `src/reference` will have developer documentation. The `public/` folder will contain public assets which is served by default after build.
+  - **`index.md`**: The content of the homepage is written in this file as the frontmatter in the YAML format.
+
+### `index.md` in subfolders
+
+Content of the `index.md` file in every subfolder will be used as the content for the page corresponding to that subfolder. This page is aimed to give an introduction, an overview, or a catalogue. This page will be shown when a section is selected from the top navigation bar.
 
 ### Media Folder
 
-Every subfolder of `content/` will contain a folder named `media`. Any media files like pictures that need to be added into markdown files of that **_specific section_** need to be placed in this folder. Then the files can be linked by simply `![alt-text](media/path-to-file)`.
+Every subfolder of `src/docs/` and `src/reference/` will contain a folder named `media`. Any media files like pictures and videos that need to be added into markdown files of that **_specific section_** need to be placed in this folder.
 
-### Structure File
+To link pictures:
 
-_**Note:** This structure file only for planning and then use as a reference. VuePress does not use it in any manner_
-
-Before contributing please finalise the structure of the content that will be added. This structure is added into a `_structure.yaml` file in every subfolder under the `content/`. In this YAML file `keys` are filenames and values are second level headings.
-
-As an example consider this,
-
-```yaml
-- features-overview:
-    - prototype
+```
+![alt-text](media/path-to-file)
 ```
 
-the `features-overview` will be a file under the same folder with filename `features-overview.md`, and the `prototype` will be a second level heading `## Prototype` inside this file. The markdown file should have a title `# Feature Overview` which will be used as the displaying text in the sidebar.
+To link videos
+
+```html
+<video controls="controls" src="./media/path-to-file" />
+```
 
 ### Commenting
 
@@ -68,6 +77,6 @@ For example,
 [todo]: update the image
 ```
 
-This will not show up in the markdown preview. use same `type-id` through out to classify comments, which is useful while searching for tasks. Currently used `type-id`s are,
+This will not show up in the markdown preview. use same `type-id` throughout to classify comments, which is useful while searching for tasks. Currently used `type-id`s are,
 
 - todo
